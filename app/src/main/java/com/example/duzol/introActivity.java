@@ -64,13 +64,13 @@ public class introActivity extends AppCompatActivity {
 //        dummy intro list
         final List<introItem> mList = new ArrayList<introItem>();
         mList.add(new introItem("Appointment",
-                "Description about Appointment.Description about Precribed drugs.Description about Precribed drugs.Description about Precribed drugs",
-                R.drawable.citylights));
+                "Description about Appointment.Description about Appointment.Description about Appointment.Description about Appointment.Description about Appointment.Description about Appointment.",
+                R.drawable.kitten_small));
         mList.add(new introItem("Prescription Drugs",
-                "Description about Precribed drugs.bout Precribed drugs.Description about Precribed drubout Precribed drugs.Description about Precribed dru",
-                R.drawable.telephone));
+                "Description about Precribed drugs.Description about Precribed drugs.Description about Precribed drugs.Description about Precribed drugs.Description about Precribed drugs.Description about Precribed drugs.",
+                R.drawable.ironman));
         mList.add(new introItem("Drug Informations",
-                "Description about drugs...duh!",R.drawable.laptop));
+                "Information about drugs.Information about drugs.Information about drugs.Information about drugs.Information about drugs.Information about drugs.Information about drugs.Information about drugs.",R.drawable.laptop));
 
 
 //        setUp viewpager
