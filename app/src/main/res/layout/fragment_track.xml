@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TrackFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintMotionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="3dp"
+        android:paddingLeft="3dp"
+        app:layoutDescription="@xml/fragment_track_xml_constraintlayout_scene">
+
+        <RelativeLayout
+            android:id="@+id/trackrelativeLayout"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/tab_shape"
+            android:elevation="3dp"
+            android:padding="10dp"
+            app:layout_constraintLeft_toLeftOf="@id/constraintMotionLayout"
+            app:layout_constraintRight_toRightOf="@id/constraintMotionLayout"
+            app:layout_constraintTop_toBottomOf="@id/tracktitle">
+
+            <ImageView
+                android:id="@+id/truck_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/TextViewFrom"
+                android:layout_centerHorizontal="true"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:src="@drawable/ic_baseline_airport_shuttle_24" />
+
+            <TextView
+                android:id="@+id/TextViewFrom"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fromtv"
+                android:layout_alignStart="@id/fromtv"
+                android:layout_marginTop="3dp"
+                android:text="America, Houston"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/typetv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextViewFrom"
+                android:layout_alignStart="@id/fromtv"
+                android:layout_marginTop="75dp"
+                android:text="Type"
+                android:textColor="#D6D6D6"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/TransitTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/typetv"
+                android:layout_alignStart="@id/TextViewFrom"
+                android:layout_marginTop="3dp"
+                android:text="Transit"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fromtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:text="from"
+                android:textColor="#D6D6D6"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/totv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="130dp"
+                android:text="To"
+                android:textColor="#D6D6D6"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/TextViewTo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totv"
+                android:layout_alignStart="@id/totv"
+                android:text="Canada, Toronto"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/statustv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totv"
+                android:layout_alignTop="@id/typetv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:text="Status"
+                android:textColor="#D6D6D6"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/departureTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/statustv"
+                android:layout_alignTop="@id/TransitTextView"
+                android:text="Departure"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/weigthtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/typetv"
+                android:layout_centerHorizontal="true"
+                android:text="Weight"
+                android:textColor="#D6D6D6"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/weigthtv"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBaseline="@id/departureTextView"
+                android:text="890g"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/truck_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="6 days"
+                android:textColor="#fff" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tracktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:drawableLeft="@drawable/ic_baseline_add_box_24"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="24dp"
+            android:text="MG 2256 142"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/trackrelativeLayout"
+            app:layout_constraintStart_toStartOf="@id/constraintMotionLayout"
+            app:layout_constraintTop_toTopOf="@id/constraintMotionLayout" />
+
+        <ImageView
+            android:id="@+id/track_delete_img"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tracktitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tracktitle" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/constraintMotionLayout"
+            app:layout_constraintEnd_toEndOf="@id/constraintMotionLayout"
+            app:layout_constraintStart_toStartOf="@id/constraintMotionLayout"
+            app:layout_constraintTop_toBottomOf="@+id/trackrelativeLayout">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:layout_marginStart="8dp"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:letterSpacing="0.1"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/trackRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"/>
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:id="@+id/space"
+            app:layout_constraintStart_toEndOf="@+id/trackrelativeLayout"
+            app:layout_constraintTop_toBottomOf="@id/trackrelativeLayout"
+            app:layout_constraintEnd_toEndOf="@+id/trackrelativeLayout"
+            app:layout_constraintStart_toStartOf="@+id/trackrelativeLayout"/>
+
+
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</FrameLayout>

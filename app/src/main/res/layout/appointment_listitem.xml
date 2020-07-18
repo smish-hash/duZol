@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="3dp"
+    android:elevation="1dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/appointment_0_shape"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/Appointment_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Appointment_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/Appointment_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/Appointment_title_tv" />
+
+    <TextView
+        android:id="@+id/appointment_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Appointment_title_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Appointment_title_tv" />
+
+    <ImageView
+        android:id="@+id/imageViewphone"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/appointment_0_shape"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewcopy"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewcopy"
+        app:layout_constraintTop_toTopOf="@+id/imageViewcopy"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_call_24" />
+
+    <ImageView
+        android:id="@+id/imageViewvideo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/appointment_0_shape"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appointment_date_tv"
+        app:srcCompat="@drawable/ic_baseline_video_call_24" />
+
+    <ImageView
+        android:id="@+id/imageViewcopy"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/appointment_0_shape"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewvideo"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewvideo"
+        app:layout_constraintTop_toTopOf="@+id/imageViewvideo"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_file_copy_24" />
+
+    <ImageView
+        android:id="@+id/appointment_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/appointment_0_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewphone"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Appointment_time_tv"
+        app:layout_constraintVertical_bias="0.857" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">duZol</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">KIIT IoT Lab</string>
+    <string name="nav_header_subtitle">iot.lab@kiit.ac.in</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_bag">Bag</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_track">Track Delivery</string>
+    <string name="menu_appointment">Appointment</string>
+    <string name="feedback">Feedback!</string>
+    <string name="nav_open_drawer">Open Drawer</string>
+    <string name="nav_close_drawer">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_main_fragment">Hello Main/Home fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="developerEmail">1928115@kiit.ac.in</string>
+    <string name="mailSubject">Feedback IoT LAB [duZol}</string>
+    <string name="startMailAbbr">Feedback: </string>
+
+    <string name="intent_title">Use Email</string>
+    <string name="intent_mail_fail">Sorry, Error occured</string>
+</resources>
